@@ -1,0 +1,5 @@
+s=input("Enter a string :")
+s1=input("Enter char to replace :")
+s2=input("Enter replacing char :")
+s=s.replace(s1, s2)
+print(s)
