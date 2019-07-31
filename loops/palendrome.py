@@ -1,6 +1,8 @@
 num=int(input("Enter no. :"))
 
-j=10**len(str(num))
+value=num
+
+j=10**(len(str(num))-1)
 numRev=0
 
 for i in range(num):
@@ -9,5 +11,7 @@ for i in range(num):
     num=num//10
     j=j/10
 
-print(num)
-print(numRev)
+if numRev==value:
+    print("{} is a palendrome".format(value))
+else:
+    print("{} is not a palendrome".format(value))
