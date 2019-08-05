@@ -53,10 +53,71 @@ TRIMMING
     replace(oldString, newString): Replace the string.
     split(): it return list of string from a string.
     join(): join list or tuple and make a string. ["-".join(list)]
-    
+
     upper(), lower(), swapcase(), title()[every word first letter], capitalize()
 
 Q1: Remove duplicate char from String.
 Q2: Count char in string
 Q3: reverse string
 Q4: Find string in a string
+
+
+================================================================
+
+isalnum()
+isalpha()
+isdigit()
+islowercase()
+isuppercase()
+
+
+LIST
+
+In python list is implemented to store the sequence of various type of data
+
+A list can be defined as collection of values or items of different type. The item in list are seperated
+by comma and enclosed with the square.
+
+    1. List object is grow-able. Based of our requirements we can increase and decrease
+    2. Here insertion order is preserved.
+    3. Duplicate item is allowed.
+
+    Creating list:
+      -> a=[]
+      -> [elements...]
+      -> list=eval(Input("Enter some list :"))
+      -> list()
+      -> split()
+
+    Accessing
+      -> By using index : listName[index].
+      -> By using slice operator.
+
+    Functions:
+      -> list.index(element)
+      -> list.count(element_to_count)
+      -> list.append(element_to_append)
+      -> list.pop() => remove last element
+      -> list.insert(index_to_add, element_to_insert)
+            [If index<length_of_list: add element in start]
+            [If index>length_of_list: add element in end]
+      -> list_one.extend(list_two)
+      -> list.remove(element_to_remove)
+      -> list.reverse()
+      -> list.sort() [Increment Order]
+            for decrement order pass reverse=True
+            syntax: list.sort(reverse=True)
+      ->list.clear() [clear list elements]
+
+    Operations:
+      -> list1 + list2 = [list1...,list...]
+      -> list1 == list2
+      -> list1*3 = [list1..., list1...]
+      -> (>,<,>=,<=) are allowed
+
+    Membership Operator:
+      -> in
+
+    List Comprehension:
+      -> [i for i in range(start, end)]
+      -> [i for i in list if condition]

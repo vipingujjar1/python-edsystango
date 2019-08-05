@@ -1,22 +1,17 @@
-# for i in range(1,13):
-#     if(i>=5 and i<=7):
-#         print(i)
-#     else:
-#         print(i,end=" ")
 
+a=[]
 
-# else can be used with for and while
+even=[]
+odd=[]
 
-# for i in range(5):
-#     print(i)
-# else:
-#     print("done")
+for i in range(1,51):
+    a.append(i)
 
+for i in a:
+    if i%2==0:
+        even.append(i)
+    else:
+        odd.append(i)
 
-# num=int(input("Enter no. :"))
-#
-# i=1
-#
-# while(i<=10):
-#     print("{} * {} = {}".format(num,i,num*i))
-#     i+=1
+print(even)
+print(odd)

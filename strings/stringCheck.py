@@ -1,0 +1,7 @@
+print("Duug789".isalnum())
+print("duug789".isalpha())
+print("Duug".isalpha())
+print("duug".islower())
+print("Duug789".isupper())
+print("Duug Is A Good Boy".istitle())
+print("".isspace())
