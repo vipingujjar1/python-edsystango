@@ -1,17 +1,10 @@
+num=int(input("Enter no. :"))
+i=1
 
-a=[]
+def tabel(i, num):
+    if(i>10):
+        return 1;
+    print("{} * {} = {}".format(num, i, num*i))
+    tabel(i+1, num)
 
-even=[]
-odd=[]
-
-for i in range(1,51):
-    a.append(i)
-
-for i in a:
-    if i%2==0:
-        even.append(i)
-    else:
-        odd.append(i)
-
-print(even)
-print(odd)
+tabel(i, num)

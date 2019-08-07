@@ -1,0 +1,243 @@
+================================================================
+
+String is collection of characters.
+Everything inside quote is string.
+In python there is no character data type.
+str represent string data type.
+str() function is used to convert other data type into string.
+we can write multi-line using triple quote ("""" """) but only in python.
+you can use single or double quote in string which is written using tripple quote you can also use \
+**in python string is immutable
+
+================================================================
+
+INDEXING
+
+  In python there are also negative index
+
+  for example: [1,2,3,4,5]
+  a[0]=a[-5]=1
+  a[1]=a[-4]=2
+  a[2]=a[-3]=3
+  a[3]=a[-2]=4
+  a[4]=a[-1]=5
+
+  This is not available in Java
+
+================================================================
+
+SLICE
+
+  S[start:end:step]
+
+================================================================
+
+COMPARISON OPERATOR
+
+  == is for content
+  is operator is for reference comparison.
+
+================================================================
+
+TRIMMING
+
+  strip() = Trim spaces on both side.
+  ltrip() = Trim only on left side.
+  rtrip() = Trim only on right side.
+
+================================================================
+
+  STRING METHODS
+
+    count(substring, start, end): How many time substring is present.
+    replace(oldString, newString): Replace the string.
+    split(): it return list of string from a string.
+    join(): join list or tuple and make a string. ["-".join(list)]
+
+    upper(), lower(), swapcase(), title()[every word first letter], capitalize()
+
+Q1: Remove duplicate char from String.
+Q2: Count char in string
+Q3: reverse string
+Q4: Find string in a string
+
+
+================================================================
+
+isalnum()
+isalpha()
+isdigit()
+islowercase()
+isuppercase()
+
+
+LIST
+
+In python list is implemented to store the sequence of various type of data
+
+A list can be defined as collection of values or items of different type. The item in list are seperated
+by comma and enclosed with the square.
+
+    1. List object is grow-able. Based of our requirements we can increase and decrease
+    2. Here insertion order is preserved.
+    3. Duplicate item is allowed.
+
+    Creating list:
+      -> a=[]
+      -> [elements...]
+      -> list=eval(Input("Enter some list :"))
+      -> list()
+      -> split()
+
+    Accessing
+      -> By using index : listName[index].
+      -> By using slice operator.
+
+    Functions:
+      -> list.index(element)
+      -> list.count(element_to_count)
+      -> list.append(element_to_append)
+      -> list.pop() => remove last element
+      -> list.insert(index_to_add, element_to_insert)
+            [If index<length_of_list: add element in start]
+            [If index>length_of_list: add element in end]
+      -> list_one.extend(list_two)
+      -> list.remove(element_to_remove)
+      -> list.reverse()
+      -> list.sort() [Increment Order]
+            for decrement order pass reverse=True
+            syntax: list.sort(reverse=True)
+      ->list.clear() [clear list elements]
+
+    Operations:
+      -> list1 + list2 = [list1...,list...]
+      -> list1 == list2
+      -> list1*3 = [list1..., list1...]
+      -> (>,<,>=,<=) are allowed
+
+    Membership Operator:
+      -> in
+
+    List Comprehension:
+      -> [i for i in range(start, end)]
+      -> [i for i in list if condition]
+
+=======================================================================================
+
+  TUPLE
+
+  A tuple is a collection which is ordered and unchangeable. In python tuple are written
+  with round bracket.
+
+  tuple is immutable and list is mutable and all parameters are same.
+
+    syntax: variable_name=(value1, value2, ..., value n)
+
+    IMPORTANT:
+      -> (10) is int not tuple.
+      ->  Tuple Comprehension is not supported. Even it work but result is not tuple
+
+    Functions:
+      -> tuple.count() => gives the no. of elements in a tuple.
+      -> tuple.index() => gives the index of an element.
+      -> sorted(tuple) => sort the tuple by converting in to list first.
+
+=======================================================================================
+
+  SET
+
+  A set is collection which is unordered and unindexed. In python set are written with curly brackets({}).
+  Set are used to perform mathematical set operations like union, intersection, symmetric difference etc.
+  A set is unordered collection of data type that is iterable, mutable and has no duplicate elements.
+
+    Difference b/w list and set
+      -> In list duplicates are allowed but in set duplicates are not allowed.
+      -> In list insertion order is preserved but in set it is not preserved.
+
+    Creating set:
+      -> var_name={value_1, value_2, ..., value_n}
+      -> Use set() function.
+
+    Functions:
+      -> set.add(element_to_add)
+      -> set.update()
+      -> set.copy()
+      -> set.pop()
+      -> set.remove()
+      -> set.discard()
+      -> set.clear()
+
+      -> set1.union(set2) or set1|set2
+      -> set1.intersection(set2) or set1&set2
+      -> set1.symmetry_difference(set2) or set1^set2
+
+
+==============================================================================================
+
+  DICTIONARY
+
+  Dictionary is a collection of key value pairs where the value can be any python object whereas
+  the keys are the immutable python object.
+
+  Indexing and slicing is not applicable in dictionary.
+  we can easily append a dictionary.
+
+    Creating Dictionary:
+      -> using {}
+      -> using dict() function
+      -> d[key]=value
+      -> dict([(key, value), (key, value)])
+      -> dict(((key, value), (key, value)))
+      -> dict({(key, value), (key, value)})
+
+    Deleting Dictionary:
+      -> del[key]
+      -> If key not found then will give an error(Key Error)
+      -> dict.clear() will clear the whole dictionary
+
+    Functions in dictionary:
+      -> dict.get(key, default_value) => If key is not there will return default value
+      -> dict.pop(key) => Will remove and return last value.
+      -> dict.popitem() => Will remove some key value pair randomly.
+      -> dict.keys() => Will return all the keys.
+      -> dict.values() => Will return all the values.
+      -> dict.items() => Will return the pair of items(in tuples) from dictionary.
+      -> dict.setdefault(key, value) => Will create if pair is not available
+
+==============================================================================================
+
+  FUNCTIONS
+
+    It is a block of code or set of instruction that we can use perform a specific task.
+    -> Default return value is None.
+    -> You can return multiple value in function.
+
+    Why do we need functions:
+      -> For making debugging easy.
+      -> Increase readability.
+      -> Easy maintenance.
+      -> We can use a code again and again.
+
+    Types of function:
+      -> User-define functions
+      -> Built in functions
+      -> Lambda functions
+      -> Recursive functions
+
+    Syntax for function:
+      def function_name(parameters):
+        statement...
+
+      -> Here def is keyword that show that it is a function.
+
+    Parameters in functions:
+      -> Positional Argument      => [ function_name(var1, var2) ]
+      -> Keyword Argument         => [ function_name(var1=value, var2=value) ]
+      -> Default Argument         => [ def function_name(para1=def_value): ]
+      -> Variable length argument => [ def function_name(*n): ]
+
+    Recursion:
+      When a function call itself is known as recursive function.
+
+      -> To terminate either use return 0 or 1.
+      
