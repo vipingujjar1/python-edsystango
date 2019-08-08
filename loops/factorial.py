@@ -1,3 +1,4 @@
+#this thing is commited by me vipin
 num=int(input("Enter no. you want factorial of :"))
 
 fact=1
